@@ -175,7 +175,7 @@ export default {
             if (!val) {
                 return true
             }
-            return String(data.name).toLowerCase().includes(String(val).toLowerCase());
+            return String(data[this.commonProps.name]).toLowerCase().includes(String(val).toLowerCase());
         },
         selectVisibleChangeHandler(isVisible) {
             if (!isVisible) {
